@@ -1,3 +1,6 @@
+# Deployment
+The app can be found [here](https://gimme-some-zip-codes.herokuapp.com/) on Heroku.
+
 # Zip Code React Lab
 
 In this exercise, you will create two React apps:
