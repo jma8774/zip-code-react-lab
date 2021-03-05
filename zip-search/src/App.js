@@ -3,6 +3,7 @@ import './App.css';
 
 
 function City({json}) { 
+  console.log(json)
   let splitCity = json.City.toLowerCase().split(' ');
   for(var i = 0; i < splitCity.length; i ++) {
     splitCity[i] = splitCity[i].charAt(0).toUpperCase() + splitCity[i].substring(1);
@@ -20,8 +21,10 @@ function City({json}) {
       <div className="card-body">
         <ul>
           <li> State: {json.State} </li>
+          <li> Country: {json.Country} </li>
           <li> Location: {json.Lat}, {json.Long} </li>
           <li> Estimated Population: {json.EstimatedPopulation} </li>
+          <li> Record Number: {json.RecordNumber} </li>
         </ul>
       </div>
   </div>
