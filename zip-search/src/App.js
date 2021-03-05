@@ -14,7 +14,7 @@ function City({json}) {
     json.EstimatedPopulation = 'N/A';
 
   return (
-  <div className="card mt-2 mb-2">
+  <div className="card mt-2 mb-3">
       <div className="card-header">
         <strong> {capitalizeCity} </strong>
       </div>
@@ -82,7 +82,10 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <h2>Zip Code Search</h2>
+          <a href="https://github.com/jma8774/zip-code-react-lab" target="_blank" class="btn btn-dark ml-3 mt-2 float-left" data-toggle="tooltip" data-placement="bottom" title="Visit GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <h1>Zip Code Search</h1>
         </div>
         <div className="container pt-2">
           <ZipSearchField onZipChange={(e) => this.zipChanged(e)} />
