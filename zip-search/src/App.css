@@ -1,6 +1,7 @@
-.App-header {
-  background-color: #222;
-  padding: 20px;
-  color: white;
-  text-align: center;
+.bg-black {
+  background-color: #242424 !important;
+}
+
+.btn-gh {
+  left: 0;
 }
