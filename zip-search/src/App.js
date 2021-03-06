@@ -83,7 +83,7 @@ class App extends Component {
       <div>
         <div className="nav bg-black text-white text-center">
           <div class="container-fluid position-relative my-3">
-            <a href="https://github.com/jma8774/zip-code-react-lab" target="_blank" rel="noreferrer" class="btn btn-dark position-absolute btn-gh ml-3 mt-2" data-toggle="tooltip" data-placement="bottom" title="Visit GitHub">
+            <a href="https://github.com/jma8774/zip-code-react-lab" target="_blank" rel="noreferrer" class="btn btn-dark position-absolute btn-gh ml-3" data-toggle="tooltip" data-placement="bottom" title="Visit GitHub">
               <i class="fab fa-github"></i>
             </a>
             <p className="h2">Zip Code Search</p>
