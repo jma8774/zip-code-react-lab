@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
+import styled, { keyframes } from "styled-components";
+import { bounce } from 'react-animations'
 import './App.css';
 
+const bounceAnimation = keyframes`${bounce}`;
+const Bounce = styled.div`
+  animation: 1s infinite ${bounceAnimation};
+`;
 
 function City({json}) { 
   console.log(json)
@@ -86,7 +92,7 @@ class App extends Component {
             <a href="https://github.com/jma8774/zip-code-react-lab" target="_blank" rel="noreferrer" class="btn btn-dark position-absolute btn-gh mt-1 ml-3" data-toggle="tooltip" data-placement="bottom" title="Visit GitHub">
               <i class="fab fa-github"></i>
             </a>
-            <p className="h2">Zip Code Search</p>
+            <Bounce><p className="h2">Zip Code Search</p></Bounce>
           </div>
         </div>
         <div className="container mt-4">
