@@ -1,11 +1,23 @@
 import React, { Component } from 'react';
 import styled, { keyframes } from "styled-components";
 import { bounce } from 'react-animations'
+import { fadeIn } from 'react-animations'
+import { bounceIn } from 'react-animations'
 import './App.css';
 
 const bounceAnimation = keyframes`${bounce}`;
 const Bounce = styled.div`
   animation: 1s infinite ${bounceAnimation};
+`;
+
+const fadeInAnimation = keyframes`${fadeIn}`;
+const FadeIn = styled.div`
+  animation: 1s ${fadeInAnimation};
+`;
+
+const bounceInAnimation = keyframes`${bounceIn}`;
+const BounceIn = styled.div`
+  animation: 0.75s ${bounceInAnimation};
 `;
 
 function City({json}) { 
@@ -102,10 +114,10 @@ class App extends Component {
               (this.state.cities.length === 0
                 ? <div className='mt-2'> No results found for the above zip code. </div>
                 : this.state.cities.map(c => {
-                    return <City 
+                    return <BounceIn><City 
                       key={c.RecordNumber} 
                       json={c}
-                    />
+                    /></BounceIn>
                   })
               )
             }
